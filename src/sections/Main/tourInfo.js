@@ -29,7 +29,7 @@ export const TourInfo = () => {
     };
 
     const script = document.createElement("script");
-    script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyAw2sm8WMirEO9GcH2uLKd-XSbCRqbTdCQ&callback=initMap`;
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&callback=initMap`;
     script.async = true;
     script.defer = true;
     window.initMap = initMap;
