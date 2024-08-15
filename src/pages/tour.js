@@ -1,12 +1,13 @@
 import { LayoutContainer } from "@/sections/container";
 import { HeroSection } from "@/sections/heroSection";
-import { Tours } from "@/sections/Main/tours";
+import { TourHeroSection } from "@/sections/tourHeroSection";
 
-export default function Home() {
+const Tour = () => {
   return (
     <LayoutContainer>
-      <HeroSection />
-      <Tours />
+      <HeroSection isBadge />
+      <TourHeroSection />
     </LayoutContainer>
   );
-}
+};
+export default Tour;
